@@ -10,8 +10,7 @@ import { DataLoader } from '../../../shared/components/DataLoader';
 import { TCityFromListObject } from '../../../shared/interfaces/cities';
 
 export const Cities: React.FC<{}> = () => {
-  const { isLoading, error, data } = useCitiesList();
-
+  const { isLoading, data } = useCitiesList();
   if (isLoading) return <DataLoader />;
 
   const { _embedded } = data;
