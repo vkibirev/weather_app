@@ -31,7 +31,7 @@ export const withTheme =
             pb: 6,
           }}
         >
-          <Container sx={{ py: 0 }} maxWidth="md">
+          <Container sx={{ py: 0 }} maxWidth="xl">
             <Cmp {...props} />
           </Container>
         </Box>

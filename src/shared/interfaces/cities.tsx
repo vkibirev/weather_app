@@ -28,3 +28,30 @@ export type TCityRouteParams = {
   lon: string;
   city: string;
 };
+
+export type TCityWeatherDetailsProps = {
+  lat: string;
+  lon: string;
+  city: string;
+  data: { daily: [] };
+};
+
+export type TCityWeatherResponse = {
+  daily: [];
+};
+
+export type TWeatherItem = {
+  dt: number;
+  weather: [
+    {
+      description: string;
+      icon: string;
+    }
+  ];
+  temp: {
+    morn: string;
+    day: string;
+    eve: string;
+    night: string;
+  };
+};
