@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { getCitiesList } from '../../../shared/apiService';
+import { getCitiesList } from '../../../shared/api/citiesApi';
 
 import { TQueryResult } from '../../../shared/interfaces/query';
 

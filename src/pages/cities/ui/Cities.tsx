@@ -11,9 +11,11 @@ import { TCityFromListObject } from '../../../shared/interfaces/cities';
 
 export const Cities: React.FC<{}> = () => {
   const { isLoading, data } = useCitiesList();
+
   if (isLoading) return <DataLoader />;
 
   const { _embedded } = data;
+
   return (
     <Grid container spacing={4}>
       {_embedded['city:search-results'].map((itm: TCityFromListObject) => (

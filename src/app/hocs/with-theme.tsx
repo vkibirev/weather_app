@@ -1,10 +1,11 @@
 import * as React from 'react';
+
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
+import Link from '@mui/material/Link';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
@@ -18,9 +19,9 @@ export const withTheme =
         <CssBaseline />
         <AppBar position="relative">
           <Toolbar>
-            <Typography variant="h6" color="inherit" noWrap>
+            <Link href="/" color="inherit" variant="h6" underline="none">
               Weather App
-            </Typography>
+            </Link>
           </Toolbar>
         </AppBar>
         <Box
@@ -30,7 +31,7 @@ export const withTheme =
             pb: 6,
           }}
         >
-          <Container sx={{ py: 12 }} maxWidth="md">
+          <Container sx={{ py: 0 }} maxWidth="md">
             <Cmp {...props} />
           </Container>
         </Box>

@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { getCityTimeZone } from '../../../shared/apiService';
+import { getCityTimeZone } from '../../../shared/api/citiesApi';
 
 import { TQueryResult } from '../../../shared/interfaces/query';
 

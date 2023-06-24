@@ -7,10 +7,6 @@ export type TCityFromListObject = {
   _links: TLinks;
 };
 
-export type TCityTimeProps = {
-  link: TLinks;
-};
-
 export type TCitiesResponse = {
   _embedded: {
     [key: string]: Array<TCityFromListObject>;
@@ -19,9 +15,16 @@ export type TCitiesResponse = {
 
 export type TCitiyWithTZResponse = {
   _embedded: { [key: string]: { iana_name: string } };
+  location: { latlon: { latitude: number; longitude: number } };
 };
 
 export type TCityCardProps = {
   cityName: string;
   link: TLinks;
+};
+
+export type TCityRouteParams = {
+  lat: string;
+  lon: string;
+  city: string;
 };
